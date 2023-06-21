@@ -1,17 +1,24 @@
 <template>
-  <header_nav/>
+  
+  <Header_nav/>
+  
   <div id="content" class="content">
     <router-view></router-view>
   </div>
+
+  <Footer_nav/>
+
 </template>
 
 <script>
-import header_nav from './components/layout/Header.vue'
+import Header_nav from "./components/layout/Header.vue";
+import Footer_nav from "./components/layout/Footer.vue";
 
 export default {
   name: 'App',
   components: {
-    header_nav
+    Header_nav,
+    Footer_nav
   }
 }
 </script>
